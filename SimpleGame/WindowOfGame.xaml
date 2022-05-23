@@ -16,8 +16,8 @@
             <ColumnDefinition Width="87*"/>
         </Grid.ColumnDefinitions>
         <Canvas x:Name="canvas" Grid.ColumnSpan="2" Grid.RowSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
-            <Ellipse x:Name="ellipse" Stroke="Black" Fill="Black" Height="22" Canvas.Left="93" Canvas.Top="17.853" Width="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Rectangle x:Name="r1" Stroke="Black" Width="9" Fill="Black" Height="406" Canvas.Left="79" Canvas.Top="10" d:LayoutOverrides="Width"/>
+            <Ellipse x:Name="ellipse" Stroke="Black" Fill="Black" Height="22" Canvas.Left="93" Canvas.Top="25" Width="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="r1" Stroke="Black" Width="9" Fill="Black" Height="406" Canvas.Left="79" Canvas.Top="10" d:LayoutOverrides="Width" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Rectangle x:Name="r2" Height="9" Stroke="Black" Fill="Black" Canvas.Left="79" Canvas.Top="407.02" Width="539" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r3" Height="9" Stroke="Black" Fill="Black" Width="91" Canvas.Left="79" Canvas.Top="363.02" d:LayoutOverrides="Width, Height"/>
             <Rectangle x:Name="r4" Height="9" Stroke="Black" Fill="Black" Width="91" Canvas.Left="79" Canvas.Top="272.02" d:LayoutOverrides="Width, Height"/>
@@ -29,7 +29,7 @@
             <Rectangle x:Name="r10" Height="9" Stroke="Black" Fill="Black" Canvas.Left="301" Canvas.Top="274.02" Width="93" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r11" Height="9" Stroke="Black" Fill="Black" Canvas.Left="301" Canvas.Top="314" Width="138" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r12" Height="9" Stroke="Black" Fill="Black" Canvas.Left="263" Canvas.Top="50.02" Width="134" d:LayoutOverrides="Height"/>
-            <Rectangle x:Name="r13" Height="9" Stroke="Black" Fill="Black" Canvas.Left="256" Canvas.Top="359.02" Width="226" d:LayoutOverrides="Height"/>
+            <Rectangle x:Name="r13" Height="9" Stroke="Black" Fill="Black" Canvas.Left="256" Canvas.Top="359.02" Width="185" d:LayoutOverrides="Height" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Rectangle x:Name="r14" Height="9" Stroke="Black" Fill="Black" Canvas.Left="480" Canvas.Top="55" Width="93" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r15" Height="9" Stroke="Black" Fill="Black" Canvas.Left="569" Canvas.Top="318.02" Width="49" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r16" Height="9" Stroke="Black" Fill="Black" Canvas.Left="654" Canvas.Top="323" Width="49" d:LayoutOverrides="Height"/>
@@ -55,6 +55,10 @@
             <Rectangle x:Name="r36" Stroke="Black" Width="9" Fill="Black" Height="144" Canvas.Left="388" Canvas.Top="139" d:LayoutOverrides="Width"/>
             <Rectangle x:Name="r37" Stroke="Black" Width="9" Fill="Black" Height="100" Canvas.Left="654" Canvas.Top="230" d:LayoutOverrides="Width"/>
             <Rectangle x:Name="r38" Stroke="Black" Width="9" Fill="Black" Height="98" Canvas.Left="609" Canvas.Top="318" d:LayoutOverrides="Width"/>
+            <Rectangle x:Name="r39" Height="9" Stroke="Black" Fill="Black" Canvas.Left="79" Canvas.Top="10" Width="134" HorizontalAlignment="Center" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+            <Rectangle x:Name="r40" Height="9" Stroke="Black" Fill="Black" Canvas.Left="610" Canvas.Top="407.02" Width="95" HorizontalAlignment="Left" VerticalAlignment="Center" d:LayoutOverrides="Height"/>
+            <Rectangle Height="15" Canvas.Left="642.667" Stroke="#FFECCF12" Canvas.Top="383.707" Width="36" Fill="#FFED5151"/>
+            <TextBlock x:Name="tb" Height="184" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="174.54" Width="44"/>
         </Canvas>
 
     </Grid>
