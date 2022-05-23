@@ -31,5 +31,15 @@ namespace SimpleGame
             window.Show();
             this.Close();
         }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                WindowOfGame window = new WindowOfGame();
+                window.Show();
+                this.Close();
+            }
+        }
     }
 }
