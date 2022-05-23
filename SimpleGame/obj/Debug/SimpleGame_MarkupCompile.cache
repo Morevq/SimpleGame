@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\App.xaml
-21880762538
+5-1077671258
 
-6-15074892
+9-989428020
 13-1310406943
-MainWindow.xaml;WindowOfGame.xaml;
+Level1.xaml;Level3.xaml;MainWindow.xaml;WindowOfGame.xaml;WindowWin.xaml;
 
 False
 

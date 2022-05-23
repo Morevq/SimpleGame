@@ -54,9 +54,24 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Compile Include="Level1.xaml.cs">
+      <DependentUpon>Level1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level3.xaml.cs">
+      <DependentUpon>Level3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowOfGame.xaml.cs">
       <DependentUpon>WindowOfGame.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowWin.xaml.cs">
+      <DependentUpon>WindowWin.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Level1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,6 +85,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="WindowOfGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowWin.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
@@ -100,7 +118,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image1.png" />
+    <Resource Include="youCool.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

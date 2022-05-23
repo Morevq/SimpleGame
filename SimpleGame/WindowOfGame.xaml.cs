@@ -31,35 +31,14 @@ namespace SimpleGame
 
         private bool isCrossed(double ax, double ay, double ax1, double ay1, double bx, double by, double bx1, double by1)
         {
-            return (
-    (
-      (
-        (ax >= bx && ax <= bx1) || (ax1 >= bx && ax1 <= bx1)
-      ) && (
-        (ay >= by && ay <= by1) || (ay1 >= by && ay1 <= by1)
-      )
-    ) || (
-      (
-        (bx >= ax && bx <= ax1) || (bx1 >= ax && bx1 <= ax1)
-      ) && (
-        (by >= ay && by <= ay1) || (by1 >= ay && by1 <= ay1)
-      )
-    )
-  ) || (
-    (
-      (
-        (ax >= bx && ax <= bx1) || (ax1 >= bx && ax1 <= bx1)
-      ) && (
-        (by >= ay && by <= ay1) || (by1 >= ay && by1 <= ay1)
-      )
-    ) || (
-      (
-        (bx >= ax && bx <= ax1) || (bx1 >= ax && bx1 <= ax1)
-      ) && (
-        (ay >= by && ay <= by1) || (ay1 >= by && ay1 <= by1)
-      )
-    )
-  );
+            return ((((ax >= bx && ax <= bx1) || (ax1 >= bx && ax1 <= bx1)) && 
+                ((ay >= by && ay <= by1) || (ay1 >= by && ay1 <= by1))) || 
+                (((bx >= ax && bx <= ax1) || (bx1 >= ax && bx1 <= ax1)) && 
+                ((by >= ay && by <= ay1) || (by1 >= ay && by1 <= ay1)))) || 
+                ((((ax >= bx && ax <= bx1) || (ax1 >= bx && ax1 <= bx1)) && 
+                ((by >= ay && by <= ay1) || (by1 >= ay && by1 <= ay1))) || 
+                (((bx >= ax && bx <= ax1) || (bx1 >= ax && bx1 <= ax1)) && 
+                ((ay >= by && ay <= by1) || (ay1 >= by && ay1 <= by1))));
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -116,6 +95,22 @@ namespace SimpleGame
                 tb.Text = i + "\n" + x1 + " " + y1 + " " + x2 + " " + y2 + "\n" 
                     + cx1 + " " + cy1 + " " + cx2 + " " + cy2 + "\n"
                     + f.ToString();
+            }
+
+            // Верхний левый угол
+            double px1 = Canvas.GetLeft(present);
+            double py1 = Canvas.GetTop(present);
+
+            // Нижний правый угол
+            double px2 = Canvas.GetLeft(present) + present.Width;
+            double py2 = Canvas.GetTop(present) + present.Height;
+
+            bool func = isCrossed(px1, py1, px2, py2, cx1, cy1, cx2, cy2);
+            if (func == true)
+            {
+                WindowWin window = new WindowWin();
+                window.Show();
+                this.Close();
             }
 
         }
