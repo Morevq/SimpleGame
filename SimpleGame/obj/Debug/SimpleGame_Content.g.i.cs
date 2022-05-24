@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("youcool.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pink-floyd-interstellar-overdrive.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("queen_we_are_the_champions.mp3")]
 
 

@@ -5,17 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="WindowWin" Height="450" Width="800">
+        Title="WindowWin" Height="450" Width="800" KeyDown="Window_KeyDown">
     <Grid>
-        <Image Margin="104,10,104,44" Source="/youCool.jpg">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="322*"/>
+            <RowDefinition Height="113*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="165*"/>
+            <ColumnDefinition Width="467*"/>
+            <ColumnDefinition Width="165*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="img" Margin="-61,10,-64,44" Source="/youCool.jpg" Grid.Column="1" Grid.RowSpan="2">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/youCool.jpg"/>
             </Image.OpacityMask>
         </Image>
-        <Button Content="Далее" Margin="642,250,23,136" Width="135"/>
-        <Button x:Name="toMainWindow" Content="В главное меню" Margin="642,342,23,44" Width="135" Click="toMainWindow_Click"/>
-        <Button Content="Назад" Margin="29,342,636,44" Width="135"/>
-        <Button x:Name="Repeat" Content="Еще раз" Margin="29,250,636,136" Width="135" Click="Repeat_Click"/>
+        <Button Content="Далее" Margin="0,250,34,24" Width="135" Grid.Column="2" d:LayoutOverrides="HorizontalAlignment"/>
+        <Button x:Name="toMainWindow" Content="В главное меню" Margin="0,20,34,44" Width="135" Click="toMainWindow_Click" Grid.Column="2" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Grid.Row="1"/>
+        <Button Content="Назад" Margin="29,20,1,44" Width="135" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Grid.Row="1"/>
+        <Button x:Name="Repeat" Content="Еще раз" Margin="29,250,1,24" Width="135" Click="Repeat_Click" d:LayoutOverrides="HorizontalAlignment"/>
 
     </Grid>
 </Window>
