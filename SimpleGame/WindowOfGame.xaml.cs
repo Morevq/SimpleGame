@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+ using System.Windows.Threading; 
 
 namespace SimpleGame
 {
@@ -27,9 +28,26 @@ namespace SimpleGame
             Canvas.SetTop(ellipse, y);
             Canvas.SetLeft(ellipse, x);
         }
+       
 
+  private void window_Loaded(object sender, RoutedEventArgs e)
+    {
+        DispatcherTimer timer = new DispatcherTimer();
+        timer.Interval = TimeSpan.FromSeconds(1);
+        timer.Tick += Timer_Tick;
+        timer.Start();
+    }
+    
+    private int sec = 0;
+    private void Timer_Tick(object sender, EventArgs e)
+    {
+        sec++;
+        string seconds = sec.ToString();
+        if (sec % 60 < 10) seconds = "0" + seconds;
+        Timer.Content = (sec / 60).ToString() + ":" + seconds;
+    }
 
-        private bool isCrossed(double ax, double ay, double ax1, double ay1, double bx, double by, double bx1, double by1)
+    private bool isCrossed(double ax, double ay, double ax1, double ay1, double bx, double by, double bx1, double by1)
         {
             return (
     (

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="WindowOfGame" Height="450" Width="800" ResizeMode="CanResize" KeyDown="Window_KeyDown">
+        Title="WindowOfGame" Height="450" Width="800" ResizeMode="CanResize" KeyDown="Window_KeyDown" Loaded="window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="29*"/>
@@ -59,6 +59,7 @@
             <Rectangle x:Name="r40" Height="9" Stroke="Black" Fill="Black" Canvas.Left="610" Canvas.Top="407.02" Width="95" HorizontalAlignment="Left" VerticalAlignment="Center" d:LayoutOverrides="Height"/>
             <Rectangle Height="15" Canvas.Left="642.667" Stroke="#FFECCF12" Canvas.Top="383.707" Width="36" Fill="#FFED5151"/>
             <TextBlock x:Name="tb" Height="184" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="174.54" Width="44"/>
+            <Label x:Name="Timer" Content="" Canvas.Left="712" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="78" FontSize="18" FontFamily="Bahnschrift SemiBold"/>
         </Canvas>
 
     </Grid>
