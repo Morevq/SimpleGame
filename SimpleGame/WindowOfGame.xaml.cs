@@ -20,7 +20,7 @@ namespace SimpleGame
     public partial class WindowOfGame : Window
     {
         const int X = 93, Y = 20;
-        int x = 93, y = 20;
+        int x = X, y = Y;
         public WindowOfGame()
         {
             InitializeComponent();
@@ -92,9 +92,9 @@ namespace SimpleGame
                     x = X;
                     y = Y;
                 }
-                tb.Text = i + "\n" + x1 + " " + y1 + " " + x2 + " " + y2 + "\n" 
+                /*tb.Text = i + "\n" + x1 + " " + y1 + " " + x2 + " " + y2 + "\n" 
                     + cx1 + " " + cy1 + " " + cx2 + " " + cy2 + "\n"
-                    + f.ToString();
+                    + f.ToString();*/
             }
 
             // Верхний левый угол

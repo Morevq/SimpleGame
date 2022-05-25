@@ -39,7 +39,7 @@
             <Rectangle x:Name="r20" Height="9" Stroke="Black" Fill="Black" Canvas.Left="656" Canvas.Top="98.02" Width="49" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r21" Height="9" Stroke="Black" Fill="Black" Canvas.Left="610" Canvas.Top="50.02" Width="49" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r22" Stroke="Black" Width="9" Fill="Black" Height="364" Canvas.Left="212" Canvas.Top="52" d:LayoutOverrides="Width"/>
-            <Rectangle x:Name="r23" Stroke="Black" Width="9" Fill="Black" Height="358" Canvas.Left="432" Canvas.Top="9" d:LayoutOverrides="Width"/>
+            <Rectangle x:Name="r23" Stroke="Black" Width="9" Fill="Black" Height="354" Canvas.Left="432" Canvas.Top="13.125" d:LayoutOverrides="Width" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Rectangle x:Name="r24" Stroke="Black" Width="9" Fill="Black" Height="313" Canvas.Left="476" Canvas.Top="55" d:LayoutOverrides="Width"/>
             <Rectangle x:Name="r25" Stroke="Black" Width="9" Fill="Black" Height="308" Canvas.Left="567" Canvas.Top="55" d:LayoutOverrides="Width"/>
             <Rectangle x:Name="r26" Stroke="Black" Width="9" Fill="Black" Height="309" Canvas.Left="522" Canvas.Top="98" d:LayoutOverrides="Width"/>

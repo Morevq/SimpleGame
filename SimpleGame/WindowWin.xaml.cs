@@ -25,10 +25,11 @@ namespace SimpleGame
             InitializeComponent();
             playMusic();
         }
-        
+
+        MediaPlayer mediaPlayer = new MediaPlayer();
+
         private void playMusic()
         {
-            MediaPlayer mediaPlayer = new MediaPlayer();
             mediaPlayer.Open(new Uri("Queen_We_Are_The_Champions.mp3", UriKind.Relative));
             mediaPlayer.Volume = 0.5;
             mediaPlayer.Play();
@@ -38,6 +39,7 @@ namespace SimpleGame
         {
             WindowOfGame window = new WindowOfGame();
             window.Show();
+            mediaPlayer.Stop();
             this.Close();
         }
 
@@ -45,12 +47,27 @@ namespace SimpleGame
         {
             MainWindow window = new MainWindow();
             window.Show();
+            mediaPlayer.Stop();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Level1 window = new Level1();
+            window.Show();
+            mediaPlayer.Stop();
             this.Close();
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            
+            if (e.Key == Key.A)
+            {
+                Level1 window = new Level1();
+                window.Show();
+                mediaPlayer.Stop();
+                this.Close();
+            }
         }
     }
 }
