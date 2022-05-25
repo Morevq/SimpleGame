@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\source\repos\SimpleGame\SimpleGame\obj\Debug\
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\
 SimpleGame
 none
 false
 DEBUG;TRACE
-C:\Users\user\source\repos\SimpleGame\SimpleGame\App.xaml
-21880762538
-
-7-2097163510
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\App.xaml
+6-72305399
+1-728358493
+11-1133730601
 13-1310406943
-MainWindow.xaml;WindowOfGame.xaml;
+Level1.xaml;Level3.xaml;MainWindow.xaml;WindowOfGame.xaml;WindowWin.xaml;WindowWin1.xaml;
 
 True
 

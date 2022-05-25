@@ -34,3 +34,12 @@ C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\SimpleGame.csproj
 C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\SimpleGame.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\SimpleGame.exe
 C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\SimpleGame.pdb
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\WindowWin.g.cs
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\WindowWin.baml
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\Level1.g.cs
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\Level3.g.cs
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\Level1.baml
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\Level3.baml
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\SimpleGame_Content.g.cs
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\WindowWin1.g.cs
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\WindowWin1.baml
