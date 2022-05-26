@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Level1" Height="450" Width="800" KeyDown="Window_KeyDown">
     <Grid>
-        <Canvas>
+        <Canvas x:Name="canvas">
             <Rectangle x:Name="r16" Height="22" Stroke="Black" Fill="Black" Canvas.Left="194" Canvas.Top="30.02" Width="374" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r17" Height="22" Stroke="Black" Fill="Black" Canvas.Left="450" Canvas.Top="78.02" Width="69" d:LayoutOverrides="Height"/>
             <Rectangle x:Name="r18" Height="22" Stroke="Black" Fill="Black" Canvas.Left="242" Canvas.Top="78.02" Width="154" d:LayoutOverrides="Height"/>

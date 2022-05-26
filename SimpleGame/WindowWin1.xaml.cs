@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.IO;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -23,6 +24,33 @@ namespace SimpleGame
         {
             InitializeComponent();
             playMusic();
+            StreamReader sr = new StreamReader("Oformlenie.txt");
+            String line = sr.ReadLine();
+            Console.WriteLine(line);
+            String holst_c = line;
+            line = sr.ReadLine();
+            String Shar = line;
+            sr.Close();
+            if (holst_c == "red")
+            {
+                holst.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+            }
+            else if (holst_c == "white")
+            {
+                holst.Background = new SolidColorBrush(Colors.White);
+            }
+            else if (holst_c == "yellow")
+            {
+                holst.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+            }
+            else if (holst_c == "green")
+            {
+                holst.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+            }
+            else if (holst_c == "pink")
+            {
+                holst.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+            }
         }
 
         MediaPlayer mediaPlayer = new MediaPlayer();

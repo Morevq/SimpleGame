@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
- using System.Windows.Threading; 
+using System.IO;
+using System.Windows.Threading; 
 
 namespace SimpleGame
 {
@@ -27,6 +28,42 @@ namespace SimpleGame
             InitializeComponent();
             Canvas.SetTop(ellipse, y);
             Canvas.SetLeft(ellipse, x);
+            StreamReader sr = new StreamReader("Oformlenie.txt");
+            String line = sr.ReadLine();
+            Console.WriteLine(line);
+            String holst_c = line;
+            line = sr.ReadLine();
+            String Shar = line;
+            sr.Close();
+            if (holst_c == "red")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+            }
+            else if (holst_c == "white")
+            {
+                canvas.Background = new SolidColorBrush(Colors.White);
+            }
+            else if (holst_c == "yellow")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+            }
+            else if (holst_c == "green")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+            }
+            else if (holst_c == "pink")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+            }
+            if(Shar == "black")
+            {
+                ellipse.Fill = new SolidColorBrush(Colors.Black);
+                ellipse.Stroke = new SolidColorBrush(Colors.Black);
+            } else if (Shar == "blue")
+            {
+                ellipse.Fill = new SolidColorBrush(Colors.Blue);
+                ellipse.Stroke = new SolidColorBrush(Colors.Blue);
+            }
         }
        
 

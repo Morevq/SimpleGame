@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
         Title="WindowWin1" Height="450" Width="800" KeyDown="Window_KeyDown">
-    <Grid>
+    <Grid x:Name="holst">
         <Grid.RowDefinitions>
             <RowDefinition Height="322*"/>
             <RowDefinition Height="113*"/>
