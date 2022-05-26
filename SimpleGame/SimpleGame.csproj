@@ -69,6 +69,9 @@
     <Compile Include="WindowWin1.xaml.cs">
       <DependentUpon>WindowWin1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowWin3.xaml.cs">
+      <DependentUpon>WindowWin3.xaml</DependentUpon>
+    </Compile>
     <Page Include="Level1.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,6 +97,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowWin1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowWin3.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
@@ -128,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image1.png" />
+    <Resource Include="Image3.png" />
     <Content Include="Queen_We_Are_The_Champions.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

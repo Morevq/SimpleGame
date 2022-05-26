@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,11 +15,11 @@ using System.Windows.Shapes;
 namespace SimpleGame
 {
     /// <summary>
-    /// Логика взаимодействия для WindowWin.xaml
+    /// Логика взаимодействия для WindowWin3.xaml
     /// </summary>
-    public partial class WindowWin : Window
+    public partial class WindowWin3 : Window
     {
-        public WindowWin()
+        public WindowWin3()
         {
             InitializeComponent();
             playMusic();
@@ -37,6 +36,14 @@ namespace SimpleGame
 
         private void Repeat_Click(object sender, RoutedEventArgs e)
         {
+            Level3 window = new Level3();
+            window.Show();
+            mediaPlayer.Stop();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             WindowOfGame window = new WindowOfGame();
             window.Show();
             mediaPlayer.Stop();
@@ -51,38 +58,15 @@ namespace SimpleGame
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Level1 window = new Level1();
-            window.Show();
-            mediaPlayer.Stop();
-            this.Close();
-        }
-
-        private void Window_KeyDown(object sender, KeyEventArgs e)
+        private void Window_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.A)
             {
-                Level1 window = new Level1();
+                WindowOfGame window = new WindowOfGame();
                 window.Show();
                 mediaPlayer.Stop();
                 this.Close();
             }
-            if (e.Key == Key.D)
-            {
-                Level3 window = new Level3();
-                window.Show();
-                mediaPlayer.Stop();
-                this.Close();
-            }
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Level3 window = new Level3();
-            window.Show();
-            mediaPlayer.Stop();
-            this.Close();
         }
     }
 }
