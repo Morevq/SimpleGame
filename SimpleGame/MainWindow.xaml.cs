@@ -21,60 +21,71 @@ namespace SimpleGame
     /// </summary>
     public partial class MainWindow : Window
     {
-        static int countPlay = 0;
         public MainWindow()
         {
             InitializeComponent();
             StreamReader sr = new StreamReader("Oformlenie.txt");
+
+            Random rand = new Random();
+            string[] mas = new string[] {"red", "white", "yellow", "green", "pink"};
+            string colorBtn = mas[rand.Next(0, mas.Length)];
+            if (colorBtn == "red")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+                form.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+            }
+            else if (colorBtn == "white")
+            {
+                play.Background = new SolidColorBrush(Colors.White);
+                form.Background = new SolidColorBrush(Colors.White);
+            }
+            else if (colorBtn == "yellow")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+                form.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+            }
+            else if (colorBtn == "green")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+                form.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+            }
+            else if (colorBtn == "pink")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+                form.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+            }
+
             String line = sr.ReadLine();
             Console.WriteLine(line);
             String holst_c = line;
             line = sr.ReadLine();
             String Shar = line;
             sr.Close();
-
-
-            if (countPlay == 0)
+            if (holst_c == "red")
             {
-                Random rand = new Random();
-                string[] mas = new string[] { "red", "white", "yellow", "green", "pink" };
-                holst_c = mas[rand.Next(0, mas.Length)];
+                holst.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
             }
-            else
+            else if (holst_c == "white")
             {
-                if (holst_c == "red")
-                {
-                    holst.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
-                }
-                else if (holst_c == "white")
-                {
-                    holst.Background = new SolidColorBrush(Colors.White);
-                }
-                else if (holst_c == "yellow")
-                {
-                    holst.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
-                }
-                else if (holst_c == "green")
-                {
-                    holst.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
-                }
-                else if (holst_c == "pink")
-                {
-                    holst.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
-                }
+                holst.Background = new SolidColorBrush(Colors.White);
             }
-            
-            if(countPlay == 0){
-                Random rand = new Random();
-                string[] mas = new string[] { "red", "white", "yellow", "green", "pink" };
-                holst_c = mas[rand.Next(0, mas.Length)];
+            else if (holst_c == "yellow")
+            {
+                holst.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
             }
-            countPlay++;
+            else if (holst_c == "green")
+            {
+                holst.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+            }
+            else if (holst_c == "pink")
+            {
+                holst.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WindowOfGame window = new WindowOfGame();
+            Level1 window = new Level1();
             window.Show();
             this.Close();
         }
@@ -84,7 +95,7 @@ namespace SimpleGame
         {
             if (e.Key == Key.Enter)
             {
-                WindowOfGame window = new WindowOfGame();
+                Level1 window = new Level1();
                 window.Show();
                 this.Close();
             }

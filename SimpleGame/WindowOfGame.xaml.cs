@@ -68,7 +68,7 @@ namespace SimpleGame
         }
        
 
-  private void window_Loaded(object sender, RoutedEventArgs e)
+    private void window_Loaded(object sender, RoutedEventArgs e)
     {
         DispatcherTimer timer = new DispatcherTimer();
         timer.Interval = TimeSpan.FromSeconds(1);
@@ -76,13 +76,21 @@ namespace SimpleGame
         timer.Start();
     }
     
-    private int sec = 0;
+    private int sec = 45;
     private void Timer_Tick(object sender, EventArgs e)
     {
-        sec++;
+        sec--;
         string seconds = sec.ToString();
         if (sec % 60 < 10) seconds = "0" + seconds;
         Timer.Content = (sec / 60).ToString() + ":" + seconds;
+        if(sec == 0)
+        {
+            sec= 45;
+            Canvas.SetTop(ellipse, Y);
+            Canvas.SetLeft(ellipse, X);
+            x = X;
+            y = Y;
+        }
     }
 
     private bool isCrossed(double ax, double ay, double ax1, double ay1, double bx, double by, double bx1, double by1)
