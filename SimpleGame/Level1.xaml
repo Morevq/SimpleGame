@@ -28,7 +28,7 @@
             <Rectangle x:Name="r14" Stroke="Black" Fill="Black" Width="22" Height="99" Canvas.Left="290" Canvas.Top="209" d:LayoutOverrides="Width"/>
             <Rectangle x:Name="r15" Stroke="Black" Fill="Black" Width="22" Height="70" Canvas.Left="450" Canvas.Top="30" d:LayoutOverrides="Width"/>
             <Ellipse x:Name="ellipse" Stroke="Black" Fill="Black" Height="17" Width="17" Canvas.Left="268.334" Canvas.Top="56.167" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Rectangle x:Name="present" Height="15" Stroke="#FFECCF12" Width="36" Fill="#FFED5151" Canvas.Left="398" Canvas.Top="58.167" d:LayoutOverrides="Width, Height"/>
+            <Rectangle x:Name="present" Height="15" Stroke="#FFECCF12" Width="36" Fill="#FFED5151" Canvas.Left="235" Canvas.Top="362.02" d:LayoutOverrides="Width, Height"/>
         </Canvas>
 
     </Grid>

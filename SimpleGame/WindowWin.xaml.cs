@@ -96,6 +96,21 @@ namespace SimpleGame
                 mediaPlayer.Stop();
                 this.Close();
             }
+            if (e.Key == Key.D)
+            {
+                Level3 window = new Level3();
+                window.Show();
+                mediaPlayer.Stop();
+                this.Close();
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Level3 window = new Level3();
+            window.Show();
+            mediaPlayer.Stop();
+            this.Close();
         }
     }
 }

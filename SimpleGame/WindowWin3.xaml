@@ -1,12 +1,12 @@
-﻿<Window x:Class="SimpleGame.WindowWin"
+﻿<Window x:Class="SimpleGame.WindowWin3"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="WindowWin" Height="450" Width="800" KeyDown="Window_KeyDown">
-    <Grid x:Name="holst">
+        Title="WindowWin3" Height="450" Width="800" KeyUp="Window_KeyUp">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="322*"/>
             <RowDefinition Height="113*"/>
@@ -21,10 +21,8 @@
                 <ImageBrush ImageSource="/youCool.jpg"/>
             </Image.OpacityMask>
         </Image>
-        <Button Content="Далее" Margin="0,250,31,24" Width="135" Grid.Column="2" d:LayoutOverrides="HorizontalAlignment" Click="Button_Click_1"/>
         <Button x:Name="toMainWindow" Content="В главное меню" Margin="0,20,31,44" Width="135" Click="toMainWindow_Click" Grid.Column="2" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Grid.Row="1"/>
         <Button Content="Назад" Margin="29,250,1,22" Width="135" d:LayoutOverrides="HorizontalAlignment" Click="Button_Click"/>
         <Button x:Name="Repeat" Content="Еще раз" Margin="31,20,0,45" Width="135" Click="Repeat_Click" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Grid.Row="1"/>
-
     </Grid>
 </Window>
