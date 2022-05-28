@@ -55,7 +55,7 @@ namespace SimpleGame
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Level3 window = new Level3();
+            WindowOfGame window = new WindowOfGame();
             window.Show();
             this.Close();
         }
