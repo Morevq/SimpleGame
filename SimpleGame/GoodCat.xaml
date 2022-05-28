@@ -4,17 +4,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SimpleGame"
-             mc:Ignorable="d" Height="329" Width="474">
+             mc:Ignorable="d" Height="311" Width="416">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="270*"/>
             <RowDefinition Height="59*"/>
         </Grid.RowDefinitions>
-        <Image Margin="10,10,24,11" Source="goodcat.jpg">
+        <Image x:Name="img" Margin="10,10,24,11" Source="goodcat.jpg">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="goodcat.jpg"/>
             </Image.OpacityMask>
         </Image>
         <TextBlock Margin="113,6,113,22" TextWrapping="Wrap" FontSize="16" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Center"><Run Language="ru-ru" Text="НЕ ТАК УЖ И ГРУСТНО"/></TextBlock>
+        <Slider x:Name="slider" Height="22" Margin="100,37,114,0" Grid.Row="1" ValueChanged="Slider_ValueChanged" Value="50" Maximum="50"/>
     </Grid>
 </UserControl>

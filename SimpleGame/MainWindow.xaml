@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="CanResize" KeyDown="Window_KeyDown">
+        Title="MainWindow" Height="500" Width="800" ResizeMode="CanResize" KeyDown="Window_KeyDown">
     <Grid x:Name="holst">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50*"/>
@@ -13,6 +13,6 @@
         </Grid.ColumnDefinitions>
         <Button Content="Оформление" Margin="0,0,30,30" FontSize="22" Click="Button_Click_oformlenie" Grid.Column="1" HorizontalAlignment="Right" Width="202" Height="62" VerticalAlignment="Bottom"/>
         <Button Content="Играть" Margin="30,0,0,30" FontSize="22" Click="Button_Click" Height="62" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="238"/>
-        <local:GoodCat Grid.ColumnSpan="2" Margin="166,26,160,92"/>
+        <local:GoodCat Grid.ColumnSpan="2" Margin="192,0,192,123"/>
     </Grid>
 </Window>
