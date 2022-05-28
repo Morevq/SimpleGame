@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="Level1" Height="450" Width="800" KeyDown="Window_KeyDown" Loaded="Window_Loaded">
+        Title="Level1" Height="500" Width="800" KeyDown="Window_KeyDown" Loaded="Window_Loaded">
     <Grid>
         <Canvas x:Name="canvas">
             <Rectangle x:Name="r16" Height="22" Stroke="Black" Fill="Black" Canvas.Left="194" Canvas.Top="30.02" Width="374" d:LayoutOverrides="Height"/>

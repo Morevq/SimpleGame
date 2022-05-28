@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace SimpleGame
 {
@@ -26,6 +28,68 @@ namespace SimpleGame
             InitializeComponent();
             Canvas.SetTop(ellipse, y);
             Canvas.SetLeft(ellipse, x);
+            StreamReader sr = new StreamReader("Oformlenie.txt");
+            String line = sr.ReadLine();
+            Console.WriteLine(line);
+            String holst_c = line;
+            line = sr.ReadLine();
+            String Shar = line;
+            sr.Close();
+            if (holst_c == "red")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+            }
+            else if (holst_c == "white")
+            {
+                canvas.Background = new SolidColorBrush(Colors.White);
+            }
+            else if (holst_c == "yellow")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+            }
+            else if (holst_c == "green")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+            }
+            else if (holst_c == "pink")
+            {
+                canvas.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+            }
+            if (Shar == "black")
+            {
+                ellipse.Fill = new SolidColorBrush(Colors.Black);
+                ellipse.Stroke = new SolidColorBrush(Colors.Black);
+            }
+            else if (Shar == "blue")
+            {
+                ellipse.Fill = new SolidColorBrush(Colors.Blue);
+                ellipse.Stroke = new SolidColorBrush(Colors.Blue);
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private int sec = 300;
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            sec--;
+            string seconds = (sec%60).ToString();
+            if (sec % 60 < 10) seconds = "0" + seconds;
+            Timer.Content = (sec / 60).ToString() + ":" + seconds;
+            if (sec == 0)
+            {
+                sec = 300;
+                Canvas.SetTop(ellipse, Y);
+                Canvas.SetLeft(ellipse, X);
+                x = X;
+                y = Y;
+            }
         }
 
         private bool isCrossed(double ax, double ay, double ax1, double ay1, double bx, double by, double bx1, double by1)

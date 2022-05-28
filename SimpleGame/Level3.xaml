@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="Level3" Height="450" Width="800" KeyDown="Window_KeyDown">
+        Title="Level3" Height="500" Width="800" KeyDown="Window_KeyDown" Loaded="Window_Loaded">
     <Grid>
-        <Canvas>
+        <Canvas x:Name="canvas">
             <Rectangle x:Name="r1" Height="409" Canvas.Left="143" Stroke="Black" Canvas.Top="10" Width="13" HorizontalAlignment="Center" VerticalAlignment="Top" OpacityMask="Black" Fill="Black"/>
             <Rectangle x:Name="r2" Height="409" Canvas.Left="672.375" Stroke="Black" Canvas.Top="10" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Rectangle x:Name="r3" Height="38" Canvas.Left="170" Stroke="Black" Canvas.Top="355.166" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -20,7 +20,7 @@
             <Rectangle x:Name="r10" Height="92" Canvas.Left="196.25" Stroke="Black" Canvas.Top="89.833" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Rectangle x:Name="r11" Height="119" Canvas.Left="249.583" Stroke="Black" Canvas.Top="36.583" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Rectangle x:Name="r12" Height="39" Canvas.Left="222.917" Stroke="Black" Canvas.Top="142.583" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Rectangle x:Name="r13" Height="172" Canvas.Left="196.25" Stroke="Black" Canvas.Top="221.166" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Rectangle x:Name="r13" Height="172" Canvas.Left="196.25" Stroke="Black" Canvas.Top="221.5" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Rectangle x:Name="r14" Height="39" Canvas.Left="222.917" Stroke="Black" Canvas.Top="274.166" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Rectangle x:Name="r15" Height="40" Canvas.Left="222.917" Stroke="Black" Canvas.Top="327.166" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Rectangle x:Name="r16" Height="40" Canvas.Left="222.917" Stroke="Black" Canvas.Top="379" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -162,6 +162,7 @@
             <Ellipse x:Name="ellipse" Stroke="Black" Fill="Black" Height="10" Width="10" Canvas.Left="603.834" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Rectangle x:Name="present" Height="9" Stroke="#FFECCF12" Width="20" Fill="#FFED5151" Canvas.Left="163" Canvas.Top="395.832" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Canvas>
+        <Label x:Name="Timer" Content="" Width="78" FontSize="18" FontFamily="Bahnschrift SemiBold" Margin="712,10,10,392"/>
 
     </Grid>
 </Window>
