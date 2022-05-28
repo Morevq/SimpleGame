@@ -24,13 +24,16 @@ namespace SimpleGame
         public MainWindow()
         {
             InitializeComponent();
-            StreamReader sr = new StreamReader("Oformlenie.txt");
+            /*StreamReader sr = new StreamReader("Oformlenie.txt");
             String line = sr.ReadLine();
-            Console.WriteLine(line);
-            String holst_c = line;
-            line = sr.ReadLine();
+            Console.WriteLine(line);*/
+            String holst_c;
+            /*line = sr.ReadLine();
             String Shar = line;
-            sr.Close();
+            sr.Close();*/
+            Random rand = new Random();
+            string[] mas = new string[] {"red", "white", "yellow", "green", "pink"};
+            holst_c = mas[rand.Next(0, mas.Length)];
             if (holst_c == "red")
             {
                 holst.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
