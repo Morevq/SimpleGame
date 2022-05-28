@@ -24,10 +24,5 @@ namespace SimpleGame
         {
             InitializeComponent();
         }
-
-        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            img.Opacity = slider.Value/50;
-        }
     }
 }

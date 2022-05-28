@@ -23,6 +23,7 @@ namespace SimpleGame
     {
         const int X = 93, Y = 20;
         int x = X, y = Y;
+        double a = 100;
         public WindowOfGame()
         {
             InitializeComponent();
@@ -146,6 +147,26 @@ namespace SimpleGame
                     Canvas.SetLeft(ellipse, X);
                     x = X;
                     y = Y;
+                    if (i == 38)
+                    {
+                        if(a>10) a -= 10;
+                        else if(a>=1) a--;
+                        for (int j = 0; j < 40; ++j)
+                        {
+                            // Верхний левый угол
+                            parts[j].Opacity = a/100;
+                        }
+                    }
+                    if (i == 0)
+                    {
+                        if (a > 10) a += 10;
+                        else if (a >= 0) a++;
+                        for (int j = 0; j < 40; ++j)
+                        {
+                            // Верхний левый угол
+                            parts[j].Opacity = a / 100;
+                        }
+                    }
                 }
                 /*tb.Text = i + "\n" + x1 + " " + y1 + " " + x2 + " " + y2 + "\n" 
                     + cx1 + " " + cy1 + " " + cx2 + " " + cy2 + "\n"

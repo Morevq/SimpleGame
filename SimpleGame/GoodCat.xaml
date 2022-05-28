@@ -16,6 +16,5 @@
             </Image.OpacityMask>
         </Image>
         <TextBlock Margin="113,6,113,22" TextWrapping="Wrap" FontSize="16" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Center"><Run Language="ru-ru" Text="НЕ ТАК УЖ И ГРУСТНО"/></TextBlock>
-        <Slider x:Name="slider" Height="22" Margin="100,37,114,0" Grid.Row="1" ValueChanged="Slider_ValueChanged" Value="50" Maximum="50"/>
     </Grid>
 </UserControl>
