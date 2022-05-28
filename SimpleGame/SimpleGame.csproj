@@ -144,5 +144,8 @@
     <Resource Include="Image3.png" />
     <Content Include="Queen_We_Are_The_Champions.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,14 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="CanResize" KeyDown="Window_KeyDown">
-    <Grid x:Name="holst">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-        </Grid.ColumnDefinitions>
-        <Button Content="Оформление" Margin="0,0,30,30" FontSize="22" Click="Button_Click_oformlenie" Grid.Column="1" HorizontalAlignment="Right" Width="202" Height="62" VerticalAlignment="Bottom"/>
-        <TextBlock Height="27" Margin="10,128,253,279" TextWrapping="Wrap" Width="119"><Run Language="ru-ru" Text="Результаты"/></TextBlock>
-        <Button Content="Играть" Margin="30,0,0,30" FontSize="22" Click="Button_Click" Height="62" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="238"/>
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanResize">
+    <Grid>
+        <Button Content="Играть" Margin="300,334,300,44" FontSize="22" Click="Button_Click" BorderBrush="{x:Null}" Background="#FFB7B7B7" FontFamily="Bahnschrift Light"/>
+        <TextBlock Height="27" Margin="10,128,671,279" TextWrapping="Wrap" Width="119"><Run Language="ru-ru" Text="Результаты"/></TextBlock>
+        <Image HorizontalAlignment="Center" Height="269" Margin="0,46,0,0" VerticalAlignment="Top" Width="604" Source="/image (1).png"/>
     </Grid>
 </Window>
