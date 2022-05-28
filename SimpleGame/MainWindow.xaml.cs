@@ -80,5 +80,15 @@ namespace SimpleGame
             window.Show();
             this.Close();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            holst.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+        }
     }
 }
