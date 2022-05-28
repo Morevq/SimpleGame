@@ -95,8 +95,8 @@ namespace SimpleGame
         {
             if (e.Key == Key.Enter)
             {
-                Level1 window = new Level1();
-                window.Show();
+                Level1 wind = new Level1();
+                wind.Show();
                 this.Close();
             }
         }

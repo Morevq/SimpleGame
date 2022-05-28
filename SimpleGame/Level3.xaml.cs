@@ -127,6 +127,14 @@ namespace SimpleGame
                 x -= 2;
                 Canvas.SetLeft(ellipse, x);
             }
+            if (e.Key == Key.Space)
+            {
+                Canvas.SetTop(ellipse, Y);
+                Canvas.SetLeft(ellipse, X);
+                x = X;
+                y = Y;
+                sec = 300;
+            }
 
             // Верхний левый угол
             double cx1 = Canvas.GetLeft(ellipse);
