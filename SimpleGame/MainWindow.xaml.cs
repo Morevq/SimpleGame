@@ -21,39 +21,55 @@ namespace SimpleGame
     /// </summary>
     public partial class MainWindow : Window
     {
+        static int countPlay = 0;
         public MainWindow()
         {
             InitializeComponent();
-            /*StreamReader sr = new StreamReader("Oformlenie.txt");
+            StreamReader sr = new StreamReader("Oformlenie.txt");
             String line = sr.ReadLine();
-            Console.WriteLine(line);*/
-            String holst_c;
-            /*line = sr.ReadLine();
+            Console.WriteLine(line);
+            String holst_c = line;
+            line = sr.ReadLine();
             String Shar = line;
-            sr.Close();*/
-            Random rand = new Random();
-            string[] mas = new string[] {"red", "white", "yellow", "green", "pink"};
-            holst_c = mas[rand.Next(0, mas.Length)];
-            if (holst_c == "red")
+            sr.Close();
+
+
+            if (countPlay == 0)
             {
-                holst.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+                Random rand = new Random();
+                string[] mas = new string[] { "red", "white", "yellow", "green", "pink" };
+                holst_c = mas[rand.Next(0, mas.Length)];
             }
-            else if (holst_c == "white")
+            else
             {
-                holst.Background = new SolidColorBrush(Colors.White);
+                if (holst_c == "red")
+                {
+                    holst.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+                }
+                else if (holst_c == "white")
+                {
+                    holst.Background = new SolidColorBrush(Colors.White);
+                }
+                else if (holst_c == "yellow")
+                {
+                    holst.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+                }
+                else if (holst_c == "green")
+                {
+                    holst.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+                }
+                else if (holst_c == "pink")
+                {
+                    holst.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+                }
             }
-            else if (holst_c == "yellow")
-            {
-                holst.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+            
+            if(countPlay == 0){
+                Random rand = new Random();
+                string[] mas = new string[] { "red", "white", "yellow", "green", "pink" };
+                holst_c = mas[rand.Next(0, mas.Length)];
             }
-            else if (holst_c == "green")
-            {
-                holst.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
-            }
-            else if (holst_c == "pink")
-            {
-                holst.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
-            }
+            countPlay++;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
