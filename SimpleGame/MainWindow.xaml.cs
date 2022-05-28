@@ -25,6 +25,36 @@ namespace SimpleGame
         {
             InitializeComponent();
             StreamReader sr = new StreamReader("Oformlenie.txt");
+
+            Random rand = new Random();
+            string[] mas = new string[] {"red", "white", "yellow", "green", "pink"};
+            string colorBtn = mas[rand.Next(0, mas.Length)];
+            if (colorBtn == "red")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+                form.Background = new SolidColorBrush(Color.FromRgb(255, 199, 199));
+            }
+            else if (colorBtn == "white")
+            {
+                play.Background = new SolidColorBrush(Colors.White);
+                form.Background = new SolidColorBrush(Colors.White);
+            }
+            else if (colorBtn == "yellow")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+                form.Background = new SolidColorBrush(Color.FromRgb(251, 236, 164));
+            }
+            else if (colorBtn == "green")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+                form.Background = new SolidColorBrush(Color.FromRgb(171, 251, 164));
+            }
+            else if (colorBtn == "pink")
+            {
+                play.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+                form.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+            }
+
             String line = sr.ReadLine();
             Console.WriteLine(line);
             String holst_c = line;
@@ -55,7 +85,7 @@ namespace SimpleGame
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WindowOfGame window = new WindowOfGame();
+            Level1 window = new Level1();
             window.Show();
             this.Close();
         }
@@ -65,7 +95,7 @@ namespace SimpleGame
         {
             if (e.Key == Key.Enter)
             {
-                WindowOfGame window = new WindowOfGame();
+                Level1 window = new Level1();
                 window.Show();
                 this.Close();
             }
@@ -76,6 +106,16 @@ namespace SimpleGame
             Oformlenie window = new Oformlenie();
             window.Show();
             this.Close();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            holst.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
         }
     }
 }

@@ -6,9 +6,32 @@
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="CanResize">
-    <Grid>
-        <Button Content="Играть" Margin="300,334,300,44" FontSize="22" Click="Button_Click" BorderBrush="{x:Null}" Background="#FFB7B7B7" FontFamily="Bahnschrift Light"/>
-        <TextBlock Height="27" Margin="10,128,671,279" TextWrapping="Wrap" Width="119"><Run Language="ru-ru" Text="Результаты"/></TextBlock>
+    <Grid x:Name="holst">
+    <Button Content="Играть" Margin="300,334,300,44" FontSize="22" Click="Button_Click" BorderBrush="{x:Null}" Background="#FFB7B7B7" FontFamily="Bahnschrift Light"/>
         <Image HorizontalAlignment="Center" Height="269" Margin="0,46,0,0" VerticalAlignment="Top" Width="604" Source="/image (1).png"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="175*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="212*"/>
+            <ColumnDefinition Width="232*"/>
+            <ColumnDefinition Width="148*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="form" Content="Оформление" Margin="1,2,10,8" FontSize="22" Click="Button_Click_oformlenie" Grid.Column="5" Grid.Row="2" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        <Button x:Name="play" Content="Играть" Margin="8,2,16,8" FontSize="22" Click="Button_Click" Grid.Row="2" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Grid.ColumnSpan="2"/>
+        <local:GoodCat Grid.ColumnSpan="2" Margin="5,24,23,15" Grid.Row="1" Grid.Column="3"/>
+        <Menu Grid.ColumnSpan="7" Margin="0,0,0,6" d:LayoutOverrides="VerticalAlignment, LeftMargin, RightMargin, TopMargin, BottomMargin">
+            <MenuItem Height="30" Header="Настройки" Width="114" Margin="10,0,0,0">
+                <MenuItem Header="Закрыть окно" Click="MenuItem_Click"/>
+                <MenuItem Header="Сбросить цвет окна" Click="MenuItem_Click_1"/>
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>

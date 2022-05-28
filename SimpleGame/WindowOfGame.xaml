@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleGame"
         mc:Ignorable="d"
-        Title="WindowOfGame" Height="450" Width="800" ResizeMode="CanResize" KeyDown="Window_KeyDown" Loaded="window_Loaded">
+        Title="WindowOfGame" Height="500" Width="800" ResizeMode="CanResize" KeyDown="Window_KeyDown" Loaded="window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="29*"/>

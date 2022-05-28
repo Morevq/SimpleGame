@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.IO;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace SimpleGame
 {
@@ -53,6 +54,31 @@ namespace SimpleGame
             else if (holst_c == "pink")
             {
                 canvas.Background = new SolidColorBrush(Color.FromRgb(251, 164, 240));
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private int sec = 30;
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            sec--;
+            string seconds = sec.ToString();
+            if (sec % 60 < 10) seconds = "0" + seconds;
+            Timer.Content = (sec / 60).ToString() + ":" + seconds;
+            if (sec == 0)
+            {
+                sec = 30;
+                Canvas.SetTop(ellipse, Y);
+                Canvas.SetLeft(ellipse, X);
+                x = X;
+                y = Y;
             }
         }
 
