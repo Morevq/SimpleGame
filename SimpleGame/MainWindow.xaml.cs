@@ -27,7 +27,7 @@ namespace SimpleGame
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WindowOfGame window = new WindowOfGame();
+            Level3 window = new Level3();
             window.Show();
             this.Close();
         }

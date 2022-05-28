@@ -10,7 +10,7 @@
         <Canvas>
             <Rectangle x:Name="r1" Height="409" Canvas.Left="143" Stroke="Black" Canvas.Top="10" Width="13" HorizontalAlignment="Center" VerticalAlignment="Top" OpacityMask="Black" Fill="Black"/>
             <Rectangle x:Name="r2" Height="409" Canvas.Left="672.375" Stroke="Black" Canvas.Top="10" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Rectangle x:Name="r3" Height="40" Canvas.Left="170" Stroke="Black" Canvas.Top="352.833" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Rectangle x:Name="r3" Height="38" Canvas.Left="170" Stroke="Black" Canvas.Top="355.166" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Rectangle x:Name="r4" Height="40" Canvas.Left="170" Stroke="Black" Canvas.Top="300.166" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Rectangle x:Name="r5" Height="92" Canvas.Left="170" Stroke="Black" Canvas.Top="194.833" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Rectangle x:Name="r6" Height="40" Canvas.Left="170" Stroke="Black" Canvas.Top="115.833" Width="13" OpacityMask="Black" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
