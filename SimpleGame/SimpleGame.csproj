@@ -54,6 +54,9 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Compile Include="GoodCat.xaml.cs">
+      <DependentUpon>GoodCat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Level1.xaml.cs">
       <DependentUpon>Level1.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,9 @@
     <Compile Include="WindowWin3.xaml.cs">
       <DependentUpon>WindowWin3.xaml</DependentUpon>
     </Compile>
+    <Page Include="GoodCat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Level1.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +148,7 @@
   <ItemGroup>
     <Resource Include="Image1.png" />
     <Resource Include="Image3.png" />
+    <Resource Include="goodcat.jpg" />
     <Content Include="Queen_We_Are_The_Champions.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

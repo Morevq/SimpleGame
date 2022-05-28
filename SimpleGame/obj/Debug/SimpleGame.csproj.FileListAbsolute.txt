@@ -76,3 +76,6 @@ C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\Oformlenie.g.cs
 C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\WindowWin3.g.cs
 C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\WindowWin3.baml
 C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\Oformlenie.baml
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\GoodCat.g.cs
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\GoodCat.baml
+C:\Users\user\Documents\GitHub\SimpleGame\SimpleGame\obj\Debug\GeneratedInternalTypeHelper.g.cs
